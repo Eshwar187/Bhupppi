@@ -1,0 +1,50 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(180deg, #8c52ff, #00bf63);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.projects {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%; 
+    max-width: 1200px; 
+    height: auto; 
+    background: linear-gradient(180deg, #8c52ff, #00bf63);
+    gap: 30px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projects:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); 
+}
+
+
+@media (max-width: 768px) {
+    .projects {
+        width: 90%;
+        padding: 5px; 
+        gap: 20px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .projects {
+        flex-direction: column; 
+        align-items: stretch; 
+        width: 95%; 
+    }
+}
